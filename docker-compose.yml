@@ -18,7 +18,7 @@ services:
       - MONGO_URI=mongodb+srv://librechat:wxH^^MuJtanrpBiKjR4idXj^@librechat-render.qsc16xo.mongodb.net/LibreChat?retryWrites=true
       - MEILI_HOST=http://meilisearch:7700
     volumes:
-      - ./.env:/app/.env
+      - stack.env:/app/.env
       - images:/app/client/public/images
       - logs:/app/api/logs
     networks:
