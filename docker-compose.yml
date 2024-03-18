@@ -22,7 +22,7 @@ services:
       - images:/app/client/public/images
       - logs:/app/api/logs
     networks:
-      - librechat:
+      - librechat
   meilisearch:
     container_name: chat-meilisearch
     image: getmeili/meilisearch:v1.7
@@ -34,7 +34,7 @@ services:
     volumes:
       - meili_data:/meili_data
     networks:
-      - librechat:
+      - librechat
 
 volumes:
   images:
