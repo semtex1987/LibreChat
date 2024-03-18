@@ -41,4 +41,8 @@ volumes:
   logs:
   meili_data:
 
+networks:
+  librechat:
+    driver: bridge
+
 
