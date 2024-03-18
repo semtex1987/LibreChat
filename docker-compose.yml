@@ -21,8 +21,6 @@ services:
       - librechat_data:/app
       - images:/app/client/public/images
       - logs:/app/api/logs
-    env_file:
-      - .env
     networks:
       - librechat
   meilisearch:
